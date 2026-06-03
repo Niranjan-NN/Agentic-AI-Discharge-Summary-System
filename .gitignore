@@ -1,0 +1,51 @@
+# Environment
+.
+.env.*
+!.env.example
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+
+
+# Uploaded patient PDFs (sensitive)
+uploads/
+*.pdf
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Tesseract / OCR temp files
+*.tiff
+*.tif
+*.tmp

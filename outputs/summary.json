@@ -1,0 +1,106 @@
+{
+  "patient_demographics": "Missing \u2013 Requires Clinician Review",
+  "admission_date": "27/02/2026",
+  "discharge_date": "02/03/2026",
+  "principal_diagnosis": "ACUTE GASTROENTERITIS WITH DEHYDRATION",
+  "secondary_diagnoses": [
+    "URINARY TRACT INFECTION"
+  ],
+  "hospital_course": "Patient presented to us with above mentioned complaints. After evaluation, she was admitted to ward. Initial investigations showed normal CBC, Serum creatinine (1.65me/dl) done was elevated. Serum electrolytes done showed low serum sodium( 128.00mnol/L). Urine routine done showed ketone bodies(+), 10-I2fhpf of pus cells, 13-20/hpf of epithelial cells with presence of bactreia hence urine culture and sensitivity sent- report awaited, She was treated with IV fluids, IV antibiotics, 1V PPI's, [IV antiemetics and other supportive measures. USG abdomen and pelvis done showed Grade-I fatty liver changes and mildly edematous part of ascending colon upto the hepatic flexure- could represent colitis. Repeat Serum Creatinine(1.17mg/dl) done was normal. TSH and Free T4 done were normal. Stool routine done showed 2-3/hpf of red blood cells, plenty/ihpf of pus cells. Patient was adviced to stay back for further management but attenders not willing to the same, hence being discharged at request with following advice.",
+  "procedures": [
+    "USG Abdomen and Pelvis",
+    "IV Cannulization"
+  ],
+  "admission_medications": [
+    "IV fluids",
+    "IV antibiotics",
+    "IV PPI's",
+    "IV antiemetics"
+  ],
+  "discharge_medications": [
+    "TAB. RACTPER 4Nits",
+    "TAB. EMESET 4M",
+    "TAB. OFLOX TZ",
+    "TAB M STRONG",
+    "TAB. ZEDOTT",
+    "TAB. ENTR{",
+    "TAB. MEFTAL SPAS"
+  ],
+  "medication_changes": [
+    {
+      "type": "Added",
+      "medication": "TAB. EMESET 4M",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Added",
+      "medication": "TAB. ENTR{",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Added",
+      "medication": "TAB. OFLOX TZ",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Added",
+      "medication": "TAB. RACTPER 4Nits",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Added",
+      "medication": "TAB. MEFTAL SPAS",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Added",
+      "medication": "TAB. ZEDOTT",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Added",
+      "medication": "TAB M STRONG",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Removed",
+      "medication": "IV PPI's",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Removed",
+      "medication": "IV fluids",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Removed",
+      "medication": "IV antiemetics",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    },
+    {
+      "type": "Removed",
+      "medication": "IV antibiotics",
+      "reason": "Reason Not Documented \u2013 Clinician Review Required"
+    }
+  ],
+  "allergies": [
+    "No Known Drug Allergies"
+  ],
+  "follow_up_instructions": "",
+  "pending_results": [
+    "Urine culture and sensitivity"
+  ],
+  "discharge_condition": "",
+  "safety_flags": [],
+  "conflicts": [
+    {
+      "field": "Diagnosis",
+      "values": [
+        "UTI",
+        "DKA"
+      ],
+      "status": "Clinician Review Required"
+    }
+  ],
+  "missing_fields": []
+}

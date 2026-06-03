@@ -1,0 +1,34 @@
+[
+  {
+    "step": 0,
+    "reasoning": "Evaluate missing fields",
+    "tool": "Planner",
+    "input": "Current Summary",
+    "result": "Checked",
+    "next_decision": "Continue"
+  },
+  {
+    "step": 0,
+    "reasoning": "Need diagnosis",
+    "tool": "DiagnosisExtractorTool",
+    "input": "Patient Notes",
+    "result": "```json\n{\n    \"principal\": \"ACUTE GASTROENTERITIS WITH DEHYDRATION\",\n    \"secondary\": [\n        \"URINARY TRACT INFECTION\"\n    ]\n}\n```",
+    "next_decision": "Update Summary"
+  },
+  {
+    "step": 0,
+    "reasoning": "Need medications",
+    "tool": "MedicationExtractorTool",
+    "input": "Patient Notes",
+    "result": "```json\n{\n  \"admission_medications\": [\n    \"IV fluids\",\n    \"IV antibiotics\",\n    \"IV PPI's\",\n    \"IV antiemetics\"\n  ],\n  \"discharge_medications\": [\n    \"TAB. RACTPER 4Nits\",\n    \"TAB. EMESET 4M\",\n    \"TAB. OFLOX TZ\",\n    \"TAB M STRONG\",\n    \"TAB. ZEDOTT\",\n    \"TAB. ENTR{\",\n    \"TAB. MEFTAL SPAS\"\n  ]\n}\n```",
+    "next_decision": "Reconcile"
+  },
+  {
+    "step": 0,
+    "reasoning": "Need demographics, dates, hospital course, procedures and allergies",
+    "tool": "ClinicalExtractorTool",
+    "input": "Patient Notes",
+    "result": "{\n    \"patient_demographics\": \"Missing \u2013 Requires Clinician Review\",\n    \"admission_date\": \"27/02/2026\",\n    \"discharge_date\": \"02/03/2026\",\n    \"hospital_course\": \"Patient presented to us with above mentioned complaints. After evaluation, she was admitted to ward. Initial investigations showed normal CBC, Serum creatinine (1.65me/dl) done was elevated. Serum electrolytes done showed low serum sodium( 128.00mnol/L). Urine routine done showed ketone bodies(+), 10-I2fhpf of pus cells, 13-20/hpf of epithelial cells with presence of bactreia hence urine culture and sensitivity sent- report awaited, She was treated with IV fluids, IV antibiotics, 1V PPI's, [IV antiemetics and other supportive measures. USG abdomen and pelvis done showed Grade-I fatty liver changes and mildly edematous part of ascending colon upto the hepatic flexure- could represent colitis. Repeat Serum Creatinine(1.17mg/dl) done was normal. TSH and Free T4 done were normal. Stool routine done showed 2-3/hpf of red blood cells, plenty/ihpf of pus cells. Patient was adviced to stay back for further management but attenders not willing to the same, hence being discharged at request with following advice.\",\n    \"procedures\": [\n        \"USG Abdomen and Pelvis\",\n        \"IV Cannulization\"\n    ],\n    \"allergies\": [\n        \"No Known Drug Allergies\"\n    ]\n}",
+    "next_decision": "Update Summary"
+  }
+]
